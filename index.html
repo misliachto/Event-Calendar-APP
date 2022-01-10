@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>My Event-Calendar APP</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="content-container">
+        <div id="content-actions-container">
+          <h1 id="current-date-title">January 2021</h1>
+          <div>
+            <button id="previous-month-button">Previous Month</button>
+            <button id="next-month-button">Next Month</button>
+          </div>
+        </div>
+        <div id="header-container"></div>
+        <div id="calendar-container"></div>
+      </div>
+      <div id="actions-container">
+        <form id="form-container">
+          <h3>Add new event</h3>
+          <h4 id="event-date"></h4>
+          <p id="message"></p>
+          <label for="event-title">Event title</label>
+          <input id="event-title" type="text" maxlength="50" />
+          <label for="event-start-time">Start time</label>
+          <input id="event-start-time" type="time" />
+          <label for="event-end-time">End time</label>
+          <input id="event-end-time" type="time" />
+          <label for="event-type">Event type</label>
+          <select id="event-type">
+            <option>Meeting</option>
+            <option>Call</option>
+            <option>Out of office</option>
+          </select>
+          <button id="save-btn">Save</button>
+          <button id="cancel-btn">Cancel</button>
+        </form>
+        <div id="events-container">P</div>
+      </div>
+    </div>
+  </body>
+</html>

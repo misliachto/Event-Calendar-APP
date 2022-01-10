@@ -1,0 +1,32 @@
+● Event properties
+  ○ Title (string, required, max length 50)
+  ○ Date (date, required)
+  ○ Start time (time, required)
+  ○ End time (time, required, has to be later than Start time)
+  ○ Type (dropdown, required, values: [‘Meeting’, ‘Call’, ‘Out of office’])
+  ○ Description (string, optional)
+● Possibility to add a new event
+● Possibility to delete an event
+  ○ Show confirmation popup
+● Layout
+  ○ Month view should be on the left side and take ~ 2⁄3 of the screen
+  ○ Create/Details view should be on the right and visible only when required
+● Month view
+    ○ Displays days for current month
+  ○ Has week day labels at the top
+■ Week starts on monday
+  ○ Each day displays events for that day
+■ Show title
+■ Color code by event type
+  ○ Clicking on event displays details for it in Details view
+● Create view
+  ○ Display all fields related to event with required validations and validation
+messages
+● Details view
+  ○ Read only fields related to event
+  ○ Delete button for deleting event
+● Prefill sessionStorage with some test data (only when sessionStorage is empty)
+
+Bonus
+● Adaptive or responsive layout
+● Unit tests  
